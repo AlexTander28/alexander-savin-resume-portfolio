@@ -2,6 +2,8 @@
 
 Самодостаточный русскоязычный HTML-лонгрид для позиции Junior Python / Automation Developer. Откройте `index.html` двойным кликом: сервер, сборка и внешние шрифты не нужны.
 
+Публичная версия: https://alextander28.github.io/alexander-savin-resume-portfolio/
+
 ## Внутри
 
 - семь открываемых кейсов;
