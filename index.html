@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Резюме и портфолио Александра Савина — Junior Python / Automation Developer. Семь проверяемых кейсов: Python, Telegram-боты, CRM, Excel-отчёты, AI-помощники и системы заявок.">
+  <title>Александр Савин — Python и автоматизация</title>
+  <style>
+    @font-face{font-family:Unbounded;src:url('./assets/Unbounded-700.ttf') format('truetype');font-weight:700;font-display:swap}
+    @font-face{font-family:Manrope;src:url('./assets/Manrope-Variable.ttf') format('truetype');font-weight:300 800;font-display:swap}
+    @font-face{font-family:JetBrains Mono;src:url('./assets/JetBrainsMono-500.ttf') format('truetype');font-weight:500;font-display:swap}
+    :root{
+      color-scheme:dark;
+      --ink:#090705;--ink-2:#100d09;--panel:#17110b;--panel-2:#21170e;
+      --paper:#f3ecdf;--sand:#b8aa94;--gold:#f2c94c;--orange:#ff6b2e;
+      --green:#9cda7a;--red:#ff796c;--line:rgba(242,201,76,.20);
+      --display:Unbounded,'Arial Narrow',sans-serif;--body:Manrope,Arial,sans-serif;--mono:'JetBrains Mono',Consolas,monospace;
+      --wrap:min(1180px,calc(100% - 40px));--r:14px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:86px;overflow-x:hidden}
+    body{margin:0;min-width:320px;overflow-x:hidden;background:var(--ink);color:var(--paper);font:16px/1.66 var(--body);-webkit-font-smoothing:antialiased}
+    body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(900px 560px at 86% -8%,rgba(242,201,76,.10),transparent 70%),linear-gradient(180deg,#090705,#0c0906 55%,#090705);pointer-events:none}
+    ::selection{background:var(--gold);color:#140d02}
+    a{color:inherit;text-underline-offset:5px;text-decoration-thickness:1px}
+    a:hover{color:var(--gold)}
+    button{font:inherit}
+    :focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+    .skip{position:fixed;left:16px;top:-80px;z-index:100;background:var(--gold);color:#140d02;padding:10px 16px;border-radius:8px;font-weight:800}.skip:focus{top:16px}
+    .wrap{width:var(--wrap);margin-inline:auto}
+    .mono{font-family:var(--mono);font-size:.78rem;letter-spacing:.02em}
+    .muted{color:var(--sand)}
+    .accent{color:var(--gold)}
+    .topbar{position:sticky;top:0;z-index:40;background:rgba(9,7,5,.92);border-bottom:1px solid var(--line)}
+    .topbar-inner{width:var(--wrap);min-height:66px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{font:700 .84rem/1 var(--display);letter-spacing:.08em;text-decoration:none;color:var(--paper)}
+    .nav{display:flex;align-items:center;gap:22px;font-size:.84rem}.nav a{text-decoration:none;color:var(--sand)}.nav a:hover{color:var(--paper)}
+    .print-btn{border:1px solid var(--line);border-radius:9px;background:var(--panel);color:var(--paper);padding:9px 13px;cursor:pointer}.print-btn:hover{border-color:var(--gold);color:var(--gold)}
+    .reading-progress{position:absolute;left:0;bottom:-1px;width:0;height:2px;background:linear-gradient(90deg,var(--gold),var(--orange));transform-origin:left}
+
+    .hero{min-height:calc(100svh - 66px);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);grid-template-rows:1fr auto;gap:42px 54px;align-items:center;padding:58px 0 30px}
+    .hero-copy{align-self:center;min-width:0}.hero h1{font:700 clamp(2.65rem,6.5vw,6rem)/1.14 var(--display);letter-spacing:-.035em;text-transform:uppercase;margin:0 0 26px;max-width:11ch;text-wrap:balance}
+    .hero h1 span{display:block;color:var(--gold)}
+    .role{font:500 clamp(1rem,1.8vw,1.35rem)/1.45 var(--mono);color:var(--sand);margin:0 0 24px}
+    .hero-lead{max-width:65ch;font-size:clamp(1.05rem,1.5vw,1.23rem);margin:0 0 30px;color:#ded4c5}.hero-lead strong{color:var(--paper)}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}.action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 19px;border-radius:10px;border:1px solid var(--line);background:var(--panel);text-decoration:none;font-weight:750;cursor:pointer;color:var(--paper)}.action.primary{background:linear-gradient(100deg,var(--gold),var(--orange));color:#160d03;border-color:transparent}.action:hover{transform:translateY(-2px);color:inherit}.action.primary:hover{color:#160d03}
+    .portrait{position:relative;min-height:560px;align-self:stretch;border-radius:18px;overflow:hidden;background:#1a120b}
+    .portrait img{width:100%;height:100%;min-height:560px;object-fit:cover;object-position:center 28%;display:block;filter:saturate(.82) contrast(1.06)}
+    .portrait::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 48%,rgba(9,7,5,.88));pointer-events:none}
+    .portrait-note{position:absolute;z-index:2;left:22px;right:22px;bottom:20px;display:flex;justify-content:space-between;gap:16px;align-items:end}.portrait-note strong{font:700 1rem/1.35 var(--display);max-width:18ch}.portrait-note span{text-align:right;color:var(--gold)}
+    .hero-index{grid-column:1/-1;display:grid;grid-template-columns:repeat(7,1fr);border-block:1px solid var(--line)}
+    .hero-index a{min-width:0;padding:15px 12px 17px;text-decoration:none;border-right:1px solid var(--line)}.hero-index a:last-child{border-right:0}.hero-index b{display:block;font:500 .68rem/1.2 var(--mono);color:var(--gold);margin-bottom:8px}.hero-index span{display:block;font-size:.8rem;line-height:1.35;color:var(--sand)}.hero-index a:hover span{color:var(--paper)}
+
+    .statement{padding:112px 0 82px}.statement-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px}.statement h2,.section-title{font:700 clamp(2rem,4vw,4.3rem)/1.22 var(--display);letter-spacing:-.025em;text-transform:uppercase;margin:0;text-wrap:balance}.statement-copy{font-size:clamp(1.3rem,2.3vw,2rem);line-height:1.45;margin:0}.statement-copy strong{color:var(--gold)}
+    .proof-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:60px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}.proof-strip div{background:var(--panel);padding:24px}.proof-strip b{display:block;font:700 clamp(1.7rem,3vw,3rem)/1 var(--display);color:var(--gold);margin-bottom:12px}.proof-strip span{color:var(--sand)}
+
+    .cases{padding:76px 0 120px}.section-head{display:grid;grid-template-columns:1fr .62fr;gap:44px;align-items:end;margin-bottom:54px}.section-head p{margin:0;max-width:56ch;color:var(--sand)}
+    .case-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:50px;align-items:start}.case-rail{position:sticky;top:102px;border-top:1px solid var(--line)}
+    .case-rail a{display:grid;grid-template-columns:36px 1fr;gap:10px;padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--sand);font-size:.83rem;line-height:1.35}.case-rail a b{font:500 .68rem/1.6 var(--mono);color:#796e5f}.case-rail a.is-active,.case-rail a:hover{color:var(--paper)}.case-rail a.is-active b{color:var(--gold)}
+    .case-stack{min-width:0}.case{scroll-margin-top:96px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(300px,.95fr);gap:0;margin-bottom:58px;background:var(--panel);border-radius:var(--r);overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.24)}
+    .case-copy{padding:clamp(25px,4vw,48px);display:flex;flex-direction:column}.case-number{font:500 .75rem/1 var(--mono);color:var(--gold);margin-bottom:30px}.case h3{font:700 clamp(1.55rem,2.8vw,3rem)/1.22 var(--display);letter-spacing:-.025em;margin:0 0 20px;text-wrap:balance}.case-summary{font-size:1.04rem;margin:0 0 22px;color:#ded4c5}.case-facts{display:grid;gap:13px;margin:8px 0 26px}.case-fact{display:grid;grid-template-columns:92px 1fr;gap:14px;border-top:1px solid rgba(242,201,76,.13);padding-top:12px}.case-fact dt{font:500 .68rem/1.55 var(--mono);color:var(--sand);text-transform:uppercase}.case-fact dd{margin:0;font-size:.9rem}.stack{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto}.stack span{border:1px solid var(--line);border-radius:999px;padding:6px 9px;font:500 .67rem/1 var(--mono);color:#d9cbb8}.case-link{margin-top:24px;align-self:flex-start;font-weight:800;color:var(--gold)}
+    .case-media{position:relative;min-height:0;aspect-ratio:1/1;background:#0b0907;overflow:hidden;display:grid;place-items:center;isolation:isolate}.case-media::before{content:"";position:absolute;z-index:-2;inset:-8%;background:var(--preview) center/cover no-repeat;filter:blur(18px) brightness(.38) saturate(.72);transform:scale(1.08)}.case-media img{width:calc(100% - 18px);height:calc(100% - 18px);object-fit:contain;display:block;position:relative;z-index:1;filter:drop-shadow(0 16px 22px rgba(0,0,0,.35));transition:transform .8s cubic-bezier(.16,1,.3,1),filter .4s}.case:hover .case-media img{transform:scale(1.035)}.case-media::after{content:"";position:absolute;z-index:2;inset:0;background:linear-gradient(180deg,transparent 72%,rgba(9,7,5,.78));pointer-events:none}.media-caption{position:absolute;z-index:3;left:18px;right:18px;bottom:15px;display:flex;justify-content:space-between;gap:12px;font:500 .68rem/1.4 var(--mono);color:#eadfce}.media-caption span:last-child{color:var(--gold);text-align:right}
+    .crm-demo{background:#0b0f13;padding:18px;display:block}.crm-demo::before,.crm-demo::after{display:none}.crm-shell{height:100%;min-height:0;border:1px solid rgba(200,245,90,.28);background:#10171d;color:#e8f0e4;padding:15px;font-family:var(--mono);display:grid;grid-template-rows:auto auto 1fr;gap:12px}.crm-head,.crm-stats,.crm-content{display:grid;gap:8px}.crm-head{grid-template-columns:1fr auto;align-items:center;font-size:.58rem;letter-spacing:.06em}.crm-head b{color:#c8f55a}.crm-head span{color:#8e9ba2;font-size:.48rem}.crm-stats{grid-template-columns:repeat(3,1fr)}.crm-stat{padding:8px;background:#162127;border-top:2px solid #c8f55a}.crm-stat span{display:block;color:#91a0a6;font-size:.46rem}.crm-stat b{display:block;font-size:1rem;margin-top:4px}.crm-content{grid-template-columns:1.12fr .88fr;min-height:0}.crm-chart,.crm-kanban{background:#162127;padding:9px;min-height:0}.crm-label{display:flex;justify-content:space-between;color:#91a0a6;font-size:.46rem;margin-bottom:8px}.chart-bars{height:calc(100% - 22px);min-height:100px;display:flex;align-items:end;gap:7px;border-bottom:1px solid #405057;padding:0 4px}.chart-bars i{display:block;flex:1;background:linear-gradient(180deg,#c8f55a,#469c72);border-radius:3px 3px 0 0}.crm-kanban{display:grid;grid-template-rows:auto 1fr}.crm-tasks{display:grid;gap:6px}.crm-task{padding:7px;background:#0c1216;border-left:2px solid #c8f55a;font-size:.48rem;color:#d7e0da}.crm-task small{display:block;color:#7f8c95;margin-top:4px;font-size:.42rem}.crm-demo .media-caption{background:rgba(9,14,17,.88);left:18px;right:18px;bottom:18px;padding:7px 8px}
+
+    .skills{padding:112px 0;background:var(--paper);color:#1a130c}.skills .section-head p{color:#625647}.skills-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.skill-block{background:#e8ddcc;border-radius:var(--r);padding:clamp(24px,4vw,42px)}.skill-block.primary{background:#1a130c;color:var(--paper)}.skill-block h3{font:700 clamp(1.35rem,2vw,2rem)/1.3 var(--display);margin:0 0 22px}.skill-list{display:grid;grid-template-columns:1fr 1fr;gap:10px 28px;padding:0;margin:0;list-style:none}.skill-list li{border-top:1px solid rgba(26,19,12,.18);padding:11px 0;font-size:.93rem}.primary .skill-list li{border-color:rgba(242,201,76,.18)}.skill-list code{font:500 .78rem/1.4 var(--mono);color:inherit}.skill-note{margin:24px 0 0;color:#766653}.primary .skill-note{color:var(--sand)}
+    .method{padding:118px 0}.method-grid{display:grid;grid-template-columns:.76fr 1.24fr;gap:60px}.method-list{border-top:1px solid var(--line)}.method-row{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}.method-row b{font:500 .76rem/1.5 var(--mono);color:var(--gold)}.method-row h3{font:700 1.05rem/1.35 var(--display);margin:0 0 7px}.method-row p{margin:0;color:var(--sand)}
+    .boundaries{margin-top:70px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.boundary{border-radius:var(--r);padding:28px;background:var(--panel)}.boundary h3{font:700 1.15rem/1.35 var(--display);margin:0 0 14px}.boundary p{margin:0;color:var(--sand)}.boundary.good h3{color:var(--green)}.boundary.limit h3{color:var(--gold)}
+    .contact{padding:110px 0 80px;border-top:1px solid var(--line)}.contact-box{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end;background:var(--panel);border-radius:18px;padding:clamp(28px,5vw,62px);position:relative;overflow:hidden}.contact-box::before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,var(--gold),var(--orange))}.contact h2{font:700 clamp(2rem,4.5vw,4.8rem)/1.2 var(--display);letter-spacing:-.03em;text-transform:uppercase;margin:0}.contact-links{display:grid;gap:10px}.contact-links a,.contact-links button{display:flex;justify-content:space-between;gap:14px;align-items:center;width:100%;border:1px solid var(--line);border-radius:10px;background:var(--ink-2);color:var(--paper);padding:13px 15px;text-decoration:none;text-align:left;cursor:pointer}.contact-links a:hover,.contact-links button:hover{border-color:var(--gold);color:var(--gold)}.contact-links span{font:500 .7rem/1 var(--mono);color:var(--sand)}
+    footer{width:var(--wrap);margin:auto;padding:28px 0 44px;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);color:var(--sand);font-size:.8rem}
+    .toast{position:fixed;right:18px;bottom:18px;z-index:80;background:var(--gold);color:#140d02;border-radius:10px;padding:12px 16px;font-weight:800;transform:translateY(140%);transition:transform .28s cubic-bezier(.16,1,.3,1)}.toast.show{transform:translateY(0)}
+    .reveal{opacity:1;transform:none}.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}.js .reveal.in{opacity:1;transform:none}
+
+    @media(max-width:980px){
+      .nav a:not(.keep){display:none}.hero{grid-template-columns:1fr .72fr;gap:30px}.portrait{min-height:470px}.portrait img{min-height:470px}.hero-index{grid-template-columns:repeat(4,1fr)}.hero-index a:nth-child(4){border-right:0}.hero-index a:nth-child(-n+4){border-bottom:1px solid var(--line)}
+      .case-layout{grid-template-columns:1fr}.case-rail{position:relative;top:auto;display:grid;grid-template-columns:repeat(4,1fr)}.case-rail a{padding:12px;border-right:1px solid var(--line)}.case{grid-template-columns:1fr}.case-media{order:-1}.skills-grid,.method-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:720px){
+      :root{--wrap:min(100% - 24px,1180px)}.topbar-inner{min-height:58px}.nav{gap:8px}.print-btn{padding:8px 10px}.hero{min-height:auto;grid-template-columns:1fr;padding:36px 0 20px}.hero h1{font-size:clamp(1.72rem,8vw,3.4rem);line-height:1.24;max-width:100%;letter-spacing:-.025em;overflow-wrap:anywhere}.portrait{min-height:390px}.portrait img{min-height:390px}.portrait-note{left:16px;right:16px}.hero-index{grid-template-columns:1fr 1fr}.hero-index a,.hero-index a:nth-child(4){border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.hero-index a:nth-child(2n){border-right:0}.hero-index a:last-child{grid-column:1/-1;border-bottom:0;border-right:0}
+      .statement{padding:78px 0 58px}.statement-grid,.section-head{grid-template-columns:1fr;gap:22px}.section-title{font-size:clamp(1.48rem,7.5vw,2.6rem);line-height:1.28;overflow-wrap:anywhere}.proof-strip{grid-template-columns:1fr}.cases{padding:60px 0 78px}.case-rail{grid-template-columns:1fr 1fr}.case-rail a:nth-child(2n){border-right:0}.case-rail a:last-child{grid-column:1/-1}.case{margin-bottom:30px}.case-copy{padding:26px 20px}.case-fact{grid-template-columns:1fr;gap:4px}.skills{padding:76px 0}.skills-grid{gap:12px}.skill-list{grid-template-columns:1fr}.method{padding:78px 0}.boundaries{grid-template-columns:1fr}.contact{padding:76px 0 54px}.contact-box{grid-template-columns:1fr;gap:28px}footer{flex-direction:column}
+    }
+    @media(max-width:430px){.brand{font-size:.72rem}.nav .keep{display:none}.hero-actions .action{width:100%}.portrait{min-height:340px}.portrait img{min-height:340px}.case-rail{grid-template-columns:1fr}.case-rail a{border-right:0}.method-row{grid-template-columns:44px 1fr}.contact-links a,.contact-links button{align-items:flex-start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.action,.case-media img,.toast,.reveal,.js .reveal{transition:none!important;transform:none!important;opacity:1!important}}
+
+    @page{size:A4;margin:10mm}
+    @media print{
+      :root{color-scheme:light;--ink:#fff;--ink-2:#fff;--panel:#f3ede3;--panel-2:#ece2d4;--paper:#17110b;--sand:#5f5548;--gold:#9a6500;--orange:#bd3e00;--line:rgba(26,19,12,.22);--wrap:100%}
+      body{background:#fff;color:#17110b;font-size:10.5pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}body::before,.skip,.topbar,.hero-index,.case-rail,.print-btn,.toast{display:none!important}.wrap{width:100%}.hero{min-height:0;grid-template-columns:1fr .72fr;grid-template-rows:auto;gap:8mm;padding:3mm 0 8mm;break-after:auto}.hero h1{font-size:33pt;line-height:1.16}.role{font-size:10pt}.hero-lead{font-size:12pt;color:#453a2d}.hero-lead strong{color:#17110b}.hero-actions{display:none}.portrait,.portrait img{min-height:0;height:80mm}.portrait img{filter:none}.portrait::after{display:none}.portrait-note{display:none}.statement{padding:0}.statement-grid{grid-template-columns:.7fr 1.3fr;gap:8mm}.statement h2,.section-title{font-size:22pt}.statement-copy{font-size:15pt}.proof-strip{margin-top:8mm}.proof-strip div{padding:5mm}.proof-strip b{font-size:22pt}.cases{padding:12mm 0 0}.section-head{margin-bottom:7mm}.case-layout{display:block}.case{grid-template-columns:1.08fr .92fr;margin-bottom:7mm;break-inside:avoid;box-shadow:none;border:1px solid var(--line)}.case-copy{padding:6mm}.case h3{font-size:16pt}.case-summary{font-size:9.5pt;color:#453a2d}.case-facts{gap:6px;margin-bottom:10px}.case-fact{padding-top:6px}.stack span{font-size:6.5pt;padding:4px 6px;color:#5c4c3c}.case-link{margin-top:10px}.case-media{min-height:0;width:76mm;height:76mm;aspect-ratio:1/1;background:#17110b}.case-media::before{filter:blur(18px) brightness(.44) saturate(1.15)}.case-media img{width:calc(100% - 10px);height:calc(100% - 10px);object-fit:contain}.case-media::after,.media-caption{display:none!important}.crm-demo{padding:4mm;background:#0b0f13}.crm-demo .crm-shell{padding:8px}.crm-demo .crm-head{font-size:5pt}.crm-demo .crm-head span{font-size:4pt}.crm-demo .crm-stat{padding:5px}.crm-demo .crm-stat span,.crm-demo .crm-label{font-size:4pt}.crm-demo .crm-stat b{font-size:9pt}.crm-demo .crm-chart,.crm-demo .crm-kanban{padding:6px}.crm-demo .crm-task{font-size:4pt;padding:5px}.crm-demo .crm-task small{font-size:3.5pt}.skills{padding:10mm 0;background:#fff}.skills-grid{grid-template-columns:1fr 1fr}.skill-block{padding:6mm}.skill-block.primary{background:#17110b!important;color:#f3ecdf}.method{padding:10mm 0}.method-grid{grid-template-columns:.72fr 1.28fr;gap:8mm}.method-row{padding:10px 0}.boundaries{margin-top:8mm}.contact{padding:12mm 0 0}.contact-box{grid-template-columns:1fr 1fr;padding:8mm;break-inside:avoid}.contact h2{font-size:23pt}.contact-links a,.contact-links button{background:#fff;color:#17110b;padding:8px}.reveal,.js .reveal{opacity:1!important;transform:none!important}footer{padding:7mm 0 0}.case:nth-of-type(3){break-before:page}.skills,.contact{break-before:page}
+    }
+  </style>
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <!--
+  THESIS: резюме читается как досье доказательств, а не как перечень обещаний; семь работ ведут рассказ.
+  OWN-WORLD: тёплый чёрный, угольные поверхности, золото и оранжевый; Unbounded для тезисов, Manrope для чтения, JetBrains Mono только для фактов.
+  STORY: работодатель понимает роль, видит семь работающих систем, сверяет навыки с доказательствами и открывает нужный кейс.
+  FIRST VIEWPORT: крупное имя слева, реальный портрет справа, роль и два действия; снизу — индекс семи работ.
+  FORM: седьмая структура — досье с фиксированным индексом и линией доказательств; seed 658b4340.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <a class="skip" href="#content">К основному содержанию</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">DEVSAVIN / РЕЗЮМЕ</a>
+      <nav class="nav" aria-label="Навигация по резюме">
+        <a class="keep" href="#cases">Кейсы</a><a href="#skills">Навыки</a><a href="#method">Подход</a><a href="#contact">Контакты</a>
+        <button class="print-btn" type="button" onclick="window.print()">Сохранить PDF</button>
+      </nav>
+    </div>
+    <div class="reading-progress" aria-hidden="true"></div>
+  </header>
+
+  <main id="content">
+    <section class="hero wrap" id="top">
+      <div class="hero-copy reveal">
+        <h1>Александр <span>Савин</span></h1>
+        <p class="role">Junior Python / Automation Developer</p>
+        <p class="hero-lead"><strong>Собираю прикладные автоматизации для бизнеса:</strong> Telegram‑боты, CRM‑реестры, обработку CSV/XLSX, системы заявок и ИИ‑помощников с контролируемой передачей человеку.</p>
+        <div class="hero-actions">
+          <a class="action primary" href="#cases">Посмотреть 7 кейсов</a>
+          <a class="action" href="mailto:alextander1994@gmail.com">Написать на почту</a>
+        </div>
+      </div>
+      <figure class="portrait reveal">
+        <img src="./assets/alexander-savin.webp" alt="Александр Савин" width="591" height="768">
+        <figcaption class="portrait-note"><strong>Автоматизация от задачи до проверяемого результата</strong><span class="mono">Омск / удалённо</span></figcaption>
+      </figure>
+      <nav class="hero-index" aria-label="Быстрый индекс кейсов">
+        <a href="#case-devsavin"><b>01</b><span>Портал DevSavin</span></a>
+        <a href="#case-admin"><b>02</b><span>CRM‑админка</span></a>
+        <a href="#case-intake"><b>03</b><span>Приём заявок</span></a>
+        <a href="#case-brief"><b>04</b><span>Бизнес‑бриф</span></a>
+        <a href="#case-excel"><b>05</b><span>Excel‑отчёты</span></a>
+        <a href="#case-telegram"><b>06</b><span>Telegram CRM</span></a>
+        <a href="#case-ai"><b>07</b><span>ИИ‑поддержка</span></a>
+      </nav>
+    </section>
+
+    <section class="statement wrap reveal" aria-labelledby="statement-title">
+      <div class="statement-grid">
+        <h2 id="statement-title">Профиль</h2>
+        <p class="statement-copy">Практический junior‑разработчик на стыке <strong>Python, автоматизации, ботов, таблиц и API.</strong> Сильная сторона — превратить небольшую бизнес‑задачу в воспроизводимый инструмент с явными границами, тестами и документацией.</p>
+      </div>
+      <div class="proof-strip" aria-label="Краткие доказательства">
+        <div><b>7</b><span>открываемых кейсов в одном портфолио</span></div>
+        <div><b>38</b><span>автоматических тестов в трёх Python‑проектах</span></div>
+        <div><b>3</b><span>проекта запускаются без рабочих API‑ключей</span></div>
+      </div>
+    </section>
+
+    <section class="cases" id="cases" aria-labelledby="cases-title">
+      <div class="wrap section-head reveal">
+        <h2 class="section-title" id="cases-title">Семь доказательств</h2>
+        <p>Каждый пункт ведёт к работающей странице. Для демонстрационных проектов отдельно указаны синтетические данные; коммерческие метрики и отзывы не используются как доказательство.</p>
+      </div>
+      <div class="wrap case-layout">
+        <nav class="case-rail" aria-label="Список кейсов">
+          <a href="#case-devsavin"><b>01</b><span>DevSavin CRM</span></a>
+          <a href="#case-admin"><b>02</b><span>CRM‑админка</span></a>
+          <a href="#case-intake"><b>03</b><span>Заявка в работе</span></a>
+          <a href="#case-brief"><b>04</b><span>Форма‑бриф</span></a>
+          <a href="#case-excel"><b>05</b><span>Excel‑автоматизация</span></a>
+          <a href="#case-telegram"><b>06</b><span>Telegram CRM</span></a>
+          <a href="#case-ai"><b>07</b><span>ИИ‑поддержка</span></a>
+        </nav>
+
+        <div class="case-stack">
+          <article class="case reveal" id="case-devsavin">
+            <div class="case-copy">
+              <div class="case-number">КЕЙС 01 / ПУБЛИЧНЫЙ ПОРТАЛ</div>
+              <h3>DevSavin CRM: портал AI‑автоматизации и услуг</h3>
+              <p class="case-summary">Персональная рабочая витрина: услуги, выбор конфигурации, форма заявки, портфолио и серверный AI‑чат собраны в одном веб‑продукте.</p>
+              <dl class="case-facts">
+                <div class="case-fact"><dt>Задача</dt><dd>Объяснить сложные услуги через понятный сценарий выбора и сразу принимать обращения.</dd></div>
+                <div class="case-fact"><dt>Сделано</dt><dd>Адаптивный портал, интерактивный расчёт, форма, серверная функция чата и отдельный контур CRM.</dd></div>
+                <div class="case-fact"><dt>Граница</dt><dd>Отзывы, прогнозные метрики и цены с публичной страницы здесь не используются как подтверждённый опыт.</dd></div>
+              </dl>
+              <div class="stack"><span>JavaScript</span><span>Node.js</span><span>Vercel</span><span>REST API</span><span>AI API</span><span>адаптивная вёрстка</span></div>
+              <a class="case-link" href="https://devsavincrm.online" target="_blank" rel="noopener">Открыть DevSavin CRM ↗</a>
+            </div>
+            <figure class="case-media" style="--preview:url('./assets/devsavin-crm.png')"><img src="./assets/devsavin-crm.png" alt="Первый экран портала DevSavin CRM" loading="lazy"><figcaption class="media-caption"><span>публичная страница</span><span>проверено: HTTP 200</span></figcaption></figure>
+          </article>
+
+          <article class="case reveal" id="case-admin">
+            <div class="case-copy">
+              <div class="case-number">КЕЙС 02 / ЗАЩИЩЁННЫЙ КОНТУР</div>
+              <h3>CRM‑админка для обработки заявок</h3>
+              <p class="case-summary">Закрытый операционный интерфейс поверх Google Sheets: заявки, статусы, Kanban, аналитика, журнал событий, email‑шаблоны и AI‑резюме обращения.</p>
+              <dl class="case-facts">
+                <div class="case-fact"><dt>Механика</dt><dd>Карточка хранит ответственного, оценку, приоритет, следующий контакт и действие; смена статуса фиксируется.</dd></div>
+                <div class="case-fact"><dt>Контроль</dt><dd>Авторизация, ограничение частоты запросов, журнал событий и явные состояния интеграций.</dd></div>
+                <div class="case-fact"><dt>Доступ</dt><dd>Рабочая область защищена паролем; публичная ссылка показывает экран входа.</dd></div>
+              </dl>
+              <div class="stack"><span>JavaScript</span><span>Google Sheets</span><span>Telegram API</span><span>Resend</span><span>Kanban</span><span>ИИ-сводка</span></div>
+              <a class="case-link" href="https://devsavincrm.online/admin" target="_blank" rel="noopener">Открыть защищённую админку ↗</a>
+            </div>
+            <figure class="case-media crm-demo" aria-label="Синтетическая демонстрация CRM-админки, составленная по структуре исходного кода">
+              <div class="crm-shell">
+                <div class="crm-head"><b>CRM / ОПЕРАЦИОННАЯ СВОДКА</b><span>СИНТЕТИЧЕСКИЕ ДАННЫЕ</span></div>
+                <div class="crm-stats"><div class="crm-stat"><span>ЗАЯВКИ</span><b>24</b></div><div class="crm-stat"><span>В РАБОТЕ</span><b>9</b></div><div class="crm-stat"><span>СЛЕД. ШАГ</span><b>6</b></div></div>
+                <div class="crm-content"><div class="crm-chart"><div class="crm-label"><span>ДИНАМИКА ЗАЯВОК</span><span>7 ДНЕЙ</span></div><div class="chart-bars" aria-hidden="true"><i style="height:34%"></i><i style="height:56%"></i><i style="height:42%"></i><i style="height:72%"></i><i style="height:61%"></i><i style="height:86%"></i><i style="height:68%"></i></div></div><div class="crm-kanban"><div class="crm-label"><span>БЛИЖАЙШИЕ ДЕЙСТВИЯ</span></div><div class="crm-tasks"><div class="crm-task">Новая заявка<small>назначить ответственного</small></div><div class="crm-task">В работе<small>зафиксировать контакт</small></div><div class="crm-task">Следующий шаг<small>проверить срок</small></div></div></div></div>
+              </div>
+              <figcaption class="media-caption"><span>CRM с аналитикой и действиями</span><span>синтетическая схема</span></figcaption>
+            </figure>
+          </article>
+
+          <article class="case reveal" id="case-intake">
+            <div class="case-copy">
+              <div class="case-number">КЕЙС 03 / СИСТЕМА ЗАЯВОК</div>
+              <h3>«Заявка в работе» для ремонтной компании</h3>
+              <p class="case-summary">Кинематографичный B2B‑сайт показывает полный путь обращения: от первого контакта до ответственного, следующего действия и контроля просрочки.</p>
+              <dl class="case-facts">
+                <div class="case-fact"><dt>Приём</dt><dd>Короткая форма сохраняет заявку в Google Sheets, затем отдельно фиксирует доставку уведомления в Telegram.</dd></div>
+                <div class="case-fact"><dt>Надёжность</dt><dd>Валидация, ограничение частоты запросов, явная ошибка конфигурации и защита персональных данных в аналитике.</dd></div>
+                <div class="case-fact"><dt>Подача</dt><dd>GSAP‑сцена объясняет изменение состояния; мобильная и reduced‑motion версии сохраняют смысл.</dd></div>
+              </dl>
+              <div class="stack"><span>Next.js</span><span>TypeScript</span><span>React</span><span>GSAP</span><span>Google Sheets</span><span>Telegram</span></div>
+              <a class="case-link" href="https://remont-omsk-intake.vercel.app/" target="_blank" rel="noopener">Открыть систему заявок ↗</a>
+            </div>
+            <figure class="case-media" style="--preview:url('./assets/remont-intake.png')"><img src="./assets/remont-intake.png" alt="Первый экран системы приёма заявок для ремонтной компании" loading="lazy"><figcaption class="media-caption"><span>рабочая сборка</span><span>десктоп / анимация</span></figcaption></figure>
+          </article>
+
+          <article class="case reveal" id="case-brief">
+            <div class="case-copy">
+              <div class="case-number">КЕЙС 04 / ДИАГНОСТИКА</div>
+              <h3>Форма‑бриф для первичной диагностики бизнеса</h3>
+              <p class="case-summary">Необязательный подробный бриф собирает контекст компании и материалы до разговора, не заставляя пользователя заполнять всё сразу.</p>
+              <dl class="case-facts">
+                <div class="case-fact"><dt>Файлы</dt><dd>До 20 файлов разрешённых форматов, не более 20 МБ каждый и 50 МБ суммарно.</dd></div>
+                <div class="case-fact"><dt>Хранение</dt><dd>Прямая загрузка по краткоживущим ссылкам в отдельную папку Яндекс Диска; сервер проверяет подписанный манифест.</dd></div>
+                <div class="case-fact"><dt>Результат</dt><dd>Метаданные сохраняются в Google Sheets, Telegram получает уведомление с путём к папке.</dd></div>
+              </dl>
+              <div class="stack"><span>Next.js</span><span>TypeScript</span><span>Yandex Disk</span><span>подписанная загрузка</span><span>PDF</span><span>валидация</span></div>
+              <a class="case-link" href="https://remont-omsk-intake.vercel.app/brief" target="_blank" rel="noopener">Открыть форму‑бриф ↗</a>
+            </div>
+            <figure class="case-media" style="--preview:url('./assets/remont-brief.png')"><img src="./assets/remont-brief.png" alt="Десктопная версия формы-брифа ремонтной компании" loading="lazy"><figcaption class="media-caption"><span>реальная форма</span><span>файлы + ответы</span></figcaption></figure>
+          </article>
+
+          <article class="case reveal" id="case-excel">
+            <div class="case-copy">
+              <div class="case-number">КЕЙС 05 / PYTHON + ДАННЫЕ</div>
+              <h3>Автоматизация Excel‑отчётов</h3>
+              <p class="case-summary">Конвейер принимает CSV/XLSX, нормализует данные, проверяет даты, телефоны, суммы и статусы, а неоднозначные строки исключает из KPI без потери.</p>
+              <dl class="case-facts">
+                <div class="case-fact"><dt>Выход</dt><dd>Excel‑отчёт на пяти листах, отдельный журнал ошибок и машинная сводка JSON.</dd></div>
+                <div class="case-fact"><dt>Демо</dt><dd>30 синтетических заказов; 25 валидных, 6 записей проверки, 1 дубликат.</dd></div>
+                <div class="case-fact"><dt>Проверка</dt><dd>12 автоматических тестов покрывают CLI, очистку, правила и сохранение шаблона.</dd></div>
+              </dl>
+              <div class="stack"><span>Python</span><span>pandas</span><span>openpyxl</span><span>argparse</span><span>pytest</span><span>logging</span></div>
+              <a class="case-link" href="https://alextander28.github.io/excel-report-automation" target="_blank" rel="noopener">Открыть интерактивный кейс ↗</a>
+            </div>
+            <figure class="case-media" style="--preview:url('./assets/excel-report-desktop.png')"><img src="./assets/excel-report-desktop.png" alt="Десктопная версия кейса автоматизации Excel-отчётов" loading="lazy"><figcaption class="media-caption"><span>десктопный интерфейс</span><span>12 тестов</span></figcaption></figure>
+          </article>
+
+          <article class="case reveal" id="case-telegram">
+            <div class="case-copy">
+              <div class="case-number">КЕЙС 06 / PYTHON + TELEGRAM</div>
+              <h3>Telegram‑бот и CRM‑реестр</h3>
+              <p class="case-summary">Бот проводит клиента через пошаговую форму, проверяет телефон, сохраняет заявку и историю статусов, уведомляет менеджера и формирует Excel‑выгрузку.</p>
+              <dl class="case-facts">
+                <div class="case-fact"><dt>Данные</dt><dd>SQLite‑реестр, аудит переходов статусов и разграничение менеджерских команд.</dd></div>
+                <div class="case-fact"><dt>Демо</dt><dd>Синтетические заявки и Excel с тремя листами; реальный Telegram‑токен не нужен.</dd></div>
+                <div class="case-fact"><dt>Проверка</dt><dd>12 тестов выполняются без отправки сообщений в Telegram API.</dd></div>
+              </dl>
+              <div class="stack"><span>Python</span><span>aiogram</span><span>aiosqlite</span><span>openpyxl</span><span>pytest</span><span>FSM</span></div>
+              <a class="case-link" href="https://alextander28.github.io/telegram-crm-bot" target="_blank" rel="noopener">Открыть интерактивный кейс ↗</a>
+            </div>
+            <figure class="case-media" style="--preview:url('./assets/telegram-crm.png')"><img src="./assets/telegram-crm.png" alt="Интерактивный кейс Telegram-бота и CRM-реестра" loading="lazy"><figcaption class="media-caption"><span>синтетические заявки</span><span>12 тестов</span></figcaption></figure>
+          </article>
+
+          <article class="case reveal" id="case-ai">
+            <div class="case-copy">
+              <div class="case-number">КЕЙС 07 / PYTHON + AI</div>
+              <h3>ИИ‑помощник поддержки</h3>
+              <p class="case-summary">Помощник отвечает только по проверяемой локальной базе знаний, показывает источник и передаёт вопрос человеку, если уверенность ниже порога 0.65.</p>
+              <dl class="case-facts">
+                <div class="case-fact"><dt>Контроль</dt><dd>Неизвестная категория, отсутствие источника и сетевой сбой всегда ведут в очередь менеджера.</dd></div>
+                <div class="case-fact"><dt>Демо</dt><dd>10 синтетических вопросов: 7 подтверждённых ответов и 3 безопасные передачи.</dd></div>
+                <div class="case-fact"><dt>Проверка</dt><dd>14 тестов проверяют порог, источники, базу данных и ошибки сетевого адаптера.</dd></div>
+              </dl>
+              <div class="stack"><span>Python</span><span>aiogram</span><span>aiosqlite</span><span>httpx</span><span>pytest</span><span>база знаний</span></div>
+              <a class="case-link" href="https://alextander28.github.io/ai-support-bot" target="_blank" rel="noopener">Открыть интерактивный кейс ↗</a>
+            </div>
+            <figure class="case-media" style="--preview:url('./assets/ai-support.png')"><img src="./assets/ai-support.png" alt="Интерактивный кейс ИИ-помощника поддержки" loading="lazy"><figcaption class="media-caption"><span>синтетические вопросы</span><span>14 тестов</span></figcaption></figure>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills" aria-labelledby="skills-title">
+      <div class="wrap section-head reveal"><h2 class="section-title" id="skills-title">Навыки по уровню доказательности</h2><p>Стек разделён не для красоты: первая группа подтверждена кодом и кейсами, вторая обозначена как базовая, без завышения уровня.</p></div>
+      <div class="wrap skills-grid">
+        <article class="skill-block primary reveal"><h3>Применял в проектах</h3><ul class="skill-list">
+          <li><code>Python</code></li><li><code>pytest</code> и тестируемая логика</li><li><code>pandas</code> / <code>openpyxl</code></li><li><code>aiogram</code> / Telegram Bot API</li><li><code>SQLite</code> / <code>aiosqlite</code></li><li><code>REST API</code> / <code>httpx</code></li><li><code>argparse</code> / <code>logging</code></li><li>CSV / XLSX / JSON</li><li>HTML / CSS / JavaScript</li><li>React / Next.js / TypeScript</li><li>Google Sheets</li><li>Yandex Disk</li><li>Git / GitHub / GitHub Pages</li><li>Vercel</li></ul><p class="skill-note">Подтверждение — открываемые кейсы, исходные репозитории и воспроизводимые тесты.</p></article>
+        <article class="skill-block reveal"><h3>Базовый уровень и развитие</h3><ul class="skill-list"><li>PostgreSQL</li><li>Redis</li><li>Docker</li><li>n8n</li><li>Node.js</li><li>безопасная конфигурация</li><li>CI / публикация</li><li>AI‑интеграции</li></ul><p class="skill-note">Готов работать с существующим кодом, небольшими модулями и инфраструктурой под ревью более опытного разработчика.</p></article>
+        <article class="skill-block reveal"><h3>Рабочие практики</h3><ul class="skill-list"><li>Декомпозиция задачи</li><li>Фиксация границ MVP</li><li>Явная валидация</li><li>Синтетические демоданные</li><li>Аудит ошибок</li><li>Документация запуска</li><li>Адаптивная проверка</li><li>Доступность интерфейса</li></ul></article>
+        <article class="skill-block reveal"><h3>Что могу брать сейчас</h3><ul class="skill-list"><li>Telegram‑бот заявок</li><li>Скрипт CSV / Excel</li><li>Форма → CRM / таблица</li><li>Небольшой REST‑сценарий</li><li>AI‑ответчик по базе</li><li>Парсинг и выгрузка</li><li>Тесты и документация</li><li>Доработка под ревью</li></ul></article>
+      </div>
+    </section>
+
+    <section class="method wrap" id="method" aria-labelledby="method-title">
+      <div class="method-grid">
+        <h2 class="section-title reveal" id="method-title">Как довожу задачу до результата</h2>
+        <div class="method-list reveal">
+          <div class="method-row"><b>01</b><div><h3>Фиксирую бизнес‑сценарий</h3><p>Кто вводит данные, какой результат получает и где нужна ручная проверка.</p></div></div>
+          <div class="method-row"><b>02</b><div><h3>Определяю границы и ошибки</h3><p>Что входит в первую версию, какие значения нельзя исправлять молча, где нужен человек.</p></div></div>
+          <div class="method-row"><b>03</b><div><h3>Разделяю интерфейс и логику</h3><p>Обработчики остаются тонкими, правила и работа с данными проверяются отдельно.</p></div></div>
+          <div class="method-row"><b>04</b><div><h3>Проверяю воспроизводимость</h3><p>Тесты, демонстрационный набор, команда запуска и ожидаемые артефакты.</p></div></div>
+          <div class="method-row"><b>05</b><div><h3>Передаю с документацией</h3><p>README, ограничения, безопасная конфигурация и понятная демонстрация для проверяющего.</p></div></div>
+        </div>
+      </div>
+      <div class="boundaries">
+        <article class="boundary good reveal"><h3>Сильная сторона</h3><p>Быстро собрать прикладной MVP вокруг понятного процесса и оставить после себя проверяемую структуру, а не только демонстрационный экран.</p></article>
+        <article class="boundary limit reveal"><h3>Честная граница</h3><p>Не позиционирую себя как middle, senior или ML‑инженера. Рассматриваю junior‑роль, стажировку, проектную работу и задачи под ревью.</p></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact-box reveal">
+        <h2 id="contact-title">Готов обсудить небольшую понятную задачу</h2>
+        <div class="contact-links">
+          <a href="mailto:alextander1994@gmail.com"><strong>alextander1994@gmail.com</strong><span>ПОЧТА</span></a>
+          <a href="https://t.me/alex_tander" target="_blank" rel="noopener"><strong>@alex_tander</strong><span>TELEGRAM</span></a>
+          <a href="https://github.com/AlexTander28" target="_blank" rel="noopener"><strong>github.com/AlexTander28</strong><span>GITHUB</span></a>
+          <button type="button" data-copy="alextander1994@gmail.com"><strong>Скопировать почту</strong><span>ОДИН КЛИК</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>Александр Савин — Junior Python / Automation Developer</span><span>Резюме обновлено: 10 сентября 2026</span></footer>
+  <div class="toast" role="status" aria-live="polite">Почта скопирована</div>
+
+  <script>
+    const progress=document.querySelector('.reading-progress');
+    const updateProgress=()=>{const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=`${max>0?(scrollY/max)*100:0}%`};
+    addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+    const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const revealItems=[...document.querySelectorAll('.reveal')];
+    if(reduce){revealItems.forEach(el=>el.classList.add('in'))}else{
+      const io=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('in');io.unobserve(entry.target)}}),{threshold:.08,rootMargin:'0px 0px -6%'});
+      revealItems.forEach(el=>io.observe(el));
+    }
+    const cases=[...document.querySelectorAll('.case')];const railLinks=[...document.querySelectorAll('.case-rail a')];
+    const activeCase=new IntersectionObserver(entries=>{const hit=entries.filter(e=>e.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(!hit)return;railLinks.forEach(a=>a.classList.toggle('is-active',a.hash===`#${hit.target.id}`))},{rootMargin:'-20% 0px -55%',threshold:[0,.2,.5]});cases.forEach(el=>activeCase.observe(el));
+    document.querySelector('[data-copy]').addEventListener('click',async e=>{const value=e.currentTarget.dataset.copy;try{await navigator.clipboard.writeText(value)}catch{const t=document.createElement('textarea');t.value=value;document.body.append(t);t.select();document.execCommand('copy');t.remove()}const toast=document.querySelector('.toast');toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1600)});
+  </script>
+</body>
+</html>
