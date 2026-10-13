@@ -1,0 +1,759 @@
+{
+  "creatorGroups": [
+    {
+      "id": "mockups",
+      "title": "Дизайны сайтов",
+      "description": "Полные авторские макеты: от первого экрана до структуры страницы.",
+      "items": [
+        {
+          "id": "mockups-mockup-bike",
+          "title": "Электровелосипеды",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-bike.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/bike.png"
+        },
+        {
+          "id": "mockups-mockup-apartments",
+          "title": "Продажа квартир",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-apartments.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/apartments.png"
+        },
+        {
+          "id": "mockups-mockup-office",
+          "title": "Ремонт офисов",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-office.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/office.png"
+        },
+        {
+          "id": "mockups-mockup-doors",
+          "title": "Магазин дверей",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-doors.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/doors.png"
+        },
+        {
+          "id": "mockups-mockup-finance",
+          "title": "Майнинг-платформа",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-finance.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/finance.png"
+        },
+        {
+          "id": "mockups-mockup-beauty",
+          "title": "Перманентный макияж",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-beauty.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/beauty.png"
+        },
+        {
+          "id": "mockups-mockup-gas",
+          "title": "Доставка газа",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-gas.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/gas.png"
+        },
+        {
+          "id": "mockups-mockup-realty",
+          "title": "Агентство недвижимости",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-realty.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/realty.png"
+        },
+        {
+          "id": "mockups-mockup-water",
+          "title": "Доставка воды",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-water.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/water.png"
+        },
+        {
+          "id": "mockups-mockup-fences",
+          "title": "Заборы",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-fences.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/fences.png"
+        },
+        {
+          "id": "mockups-mockup-cosmetics",
+          "title": "Косметика",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-cosmetics.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/cosmetics.png"
+        },
+        {
+          "id": "mockups-mockup-headphones",
+          "title": "Наушники",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-headphones.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/headphones.png"
+        },
+        {
+          "id": "mockups-mockup-audiobooks",
+          "title": "Аудиокниги",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-audiobooks.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/audiobooks.png"
+        },
+        {
+          "id": "mockups-mockup-cargo",
+          "title": "Авиаперевозки",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-cargo.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/cargo.webp"
+        },
+        {
+          "id": "mockups-mockup-gas-refill",
+          "title": "Заправка газгольдера",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-gas-refill.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/gas-refill.png"
+        },
+        {
+          "id": "mockups-mockup-construction",
+          "title": "Строительная компания",
+          "kind": "Макет сайта",
+          "thumb": "assets/catalogue/mockups-mockup-construction.jpg",
+          "width": 1000,
+          "height": 750,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/construction.png"
+        }
+      ]
+    },
+    {
+      "id": "banners",
+      "title": "Баннеры и превью",
+      "description": "Визуальные идеи для первого впечатления. Референсные импорты и точные дубли исключены.",
+      "items": [
+        {
+          "id": "banners-banner-02",
+          "title": "Данные не хранят",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-02.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-02.jpg"
+        },
+        {
+          "id": "banners-banner-03",
+          "title": "Бот в CRM",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-03.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-03.jpg"
+        },
+        {
+          "id": "banners-banner-04",
+          "title": "Код в чате",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-04.jpg",
+          "width": 1200,
+          "height": 679,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-04.jpg"
+        },
+        {
+          "id": "banners-banner-06",
+          "title": "S27 через ИИ",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-06.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-06.jpg"
+        },
+        {
+          "id": "banners-banner-07",
+          "title": "GPT-5.6 в коде",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-07.jpg",
+          "width": 1200,
+          "height": 679,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-07.jpg"
+        },
+        {
+          "id": "banners-banner-08",
+          "title": "Чип для ИИ",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-08.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-08.jpg"
+        },
+        {
+          "id": "banners-banner-09",
+          "title": "ИИ-агенты под контролем",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-09.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-09.jpg"
+        },
+        {
+          "id": "banners-banner-10",
+          "title": "Этот сайт сделал ИИ",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-10.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-10.jpg"
+        },
+        {
+          "id": "banners-banner-11",
+          "title": "ChatGPT на Linux",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-11.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-11.jpg"
+        },
+        {
+          "id": "banners-banner-12",
+          "title": "ИИ-агенты поссорились",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-12.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-12.jpg"
+        },
+        {
+          "id": "banners-banner-13",
+          "title": "Собрал ИИ-бизнес",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-13.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-13.png"
+        },
+        {
+          "id": "banners-banner-14",
+          "title": "Бросок с центра",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-14.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-14.png"
+        },
+        {
+          "id": "banners-banner-15",
+          "title": "Сломал кольцо",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-15.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-15.png"
+        },
+        {
+          "id": "banners-banner-16",
+          "title": "Клюнул монстр",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-16.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-16.png"
+        },
+        {
+          "id": "banners-banner-17",
+          "title": "Это не рыба",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-17.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-17.png"
+        },
+        {
+          "id": "banners-banner-18",
+          "title": "Мой AI-агент 24/7",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-18.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-18.png"
+        },
+        {
+          "id": "banners-banner-19",
+          "title": "ИИ сделал всё",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-19.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-19.png"
+        },
+        {
+          "id": "banners-banner-20",
+          "title": "Сделал свой AI-мульт",
+          "kind": "Авторский баннер",
+          "thumb": "assets/catalogue/banners-banner-20.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/banners/banner-20.png"
+        }
+      ]
+    },
+    {
+      "id": "covers",
+      "title": "Обложки",
+      "description": "Семь авторских визуальных концепций с AI.",
+      "items": [
+        {
+          "id": "covers-cover-01",
+          "title": "Сайт за вечер",
+          "kind": "Обложка / AI-концепт",
+          "thumb": "assets/catalogue/covers-cover-01.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/cover-01.png"
+        },
+        {
+          "id": "covers-cover-02",
+          "title": "Кино из текста",
+          "kind": "Обложка / AI-концепт",
+          "thumb": "assets/catalogue/covers-cover-02.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/cover-02.png"
+        },
+        {
+          "id": "covers-cover-03",
+          "title": "Бот берёт рутину",
+          "kind": "Обложка / AI-концепт",
+          "thumb": "assets/catalogue/covers-cover-03.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/cover-03.png"
+        },
+        {
+          "id": "covers-cover-04",
+          "title": "Это не фото",
+          "kind": "Обложка / AI-концепт",
+          "thumb": "assets/catalogue/covers-cover-04.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/cover-04.png"
+        },
+        {
+          "id": "covers-cover-05",
+          "title": "Реклама без студии",
+          "kind": "Обложка / AI-концепт",
+          "thumb": "assets/catalogue/covers-cover-05.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/cover-05.png"
+        },
+        {
+          "id": "covers-cover-06",
+          "title": "Дизайн, который работает",
+          "kind": "Обложка / AI-концепт",
+          "thumb": "assets/catalogue/covers-cover-06.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/cover-06.png"
+        },
+        {
+          "id": "covers-cover-07",
+          "title": "Арсенал креатора",
+          "kind": "Обложка / AI-концепт",
+          "thumb": "assets/catalogue/covers-cover-07.jpg",
+          "width": 1200,
+          "height": 675,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/cover-07.png"
+        }
+      ]
+    },
+    {
+      "id": "sites",
+      "title": "Сайты и интерфейсы",
+      "description": "Пять выделенных концепций с представлением на компьютере и телефоне.",
+      "items": [
+        {
+          "id": "sites-ui-new-01",
+          "title": "Финтех-аналитика",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-01.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-01.png"
+        },
+        {
+          "id": "sites-ui-new-02",
+          "title": "Премиальная недвижимость",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-02.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-02.png"
+        },
+        {
+          "id": "sites-ui-new-03",
+          "title": "Путешествия",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-03.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-03.png"
+        },
+        {
+          "id": "sites-ui-new-04",
+          "title": "Креативное агентство",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-04.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-04.png"
+        },
+        {
+          "id": "sites-ui-new-05",
+          "title": "Wellness-панель",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-05.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-05.png"
+        }
+      ]
+    },
+    {
+      "id": "ui",
+      "title": "UI/UX-концепты",
+      "description": "Двенадцать интерфейсных направлений. Пять из них также показаны в коллекции «Сайты и интерфейсы».",
+      "items": [
+        {
+          "id": "ui-ui-architecture",
+          "title": "Архитектура",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/ui-ui-architecture.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-architecture.png"
+        },
+        {
+          "id": "ui-ui-education",
+          "title": "Образование",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/ui-ui-education.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-education.png"
+        },
+        {
+          "id": "ui-ui-hotel",
+          "title": "Отель",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/ui-ui-hotel.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-hotel.png"
+        },
+        {
+          "id": "ui-ui-restaurant",
+          "title": "Ресторан",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/ui-ui-restaurant.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-restaurant.png"
+        },
+        {
+          "id": "ui-ui-shop",
+          "title": "Магазин",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/ui-ui-shop.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-shop.png"
+        },
+        {
+          "id": "ui-ui-team",
+          "title": "Команда",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/ui-ui-team.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-team.png"
+        },
+        {
+          "id": "ui-ui-training",
+          "title": "Тренировки",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/ui-ui-training.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-training.png"
+        },
+        {
+          "id": "ui-ui-new-01",
+          "title": "Финтех-аналитика",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-01.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-01.png"
+        },
+        {
+          "id": "ui-ui-new-02",
+          "title": "Премиальная недвижимость",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-02.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-02.png"
+        },
+        {
+          "id": "ui-ui-new-03",
+          "title": "Путешествия",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-03.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-03.png"
+        },
+        {
+          "id": "ui-ui-new-04",
+          "title": "Креативное агентство",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-04.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-04.png"
+        },
+        {
+          "id": "ui-ui-new-05",
+          "title": "Wellness-панель",
+          "kind": "UI/UX-концепт",
+          "thumb": "assets/catalogue/sites-ui-new-05.jpg",
+          "width": 1200,
+          "height": 751,
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/works/ui-new-05.png"
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "devsavin-crm",
+      "title": "CRM Devsavin",
+      "group": "CRM",
+      "status": "Опубликованный защищённый интерфейс",
+      "description": "Заявки, статусы, воронка и AI-анализ в закрытой админке поверх Google Sheets.",
+      "contribution": "Идея, сценарии, дизайн и работа над автоматизациями.",
+      "image": "assets/catalogue/product-devsavin.jpg",
+      "url": "https://devsavincrm.online/admin",
+      "detail": "Публичная ссылка открывает вход в защищённую админку. В этой подготовке внутренние клиентские данные и интеграции не проверялись.",
+      "imageWidth": 1200,
+      "imageHeight": 675
+    },
+    {
+      "id": "stroy-crm",
+      "title": "CRM СтройПроекта",
+      "group": "CRM",
+      "status": "Интерактивный дизайн-прототип",
+      "description": "Журнал заявок, доска этапов, задачи, карточка с историей и следующими действиями.",
+      "contribution": "Идея, пользовательские сценарии и дизайн интерфейса.",
+      "image": "assets/catalogue/product-stroy-crm.jpg",
+      "url": "demos/stroy-crm/index.html",
+      "detail": "Можно открыть демонстрацию без настоящего пароля. Данные синтетические; изменения сохраняются только до перезагрузки, серверные аккаунты не подключены.",
+      "imageWidth": 1200,
+      "imageHeight": 833
+    },
+    {
+      "id": "telegram-crm",
+      "title": "Telegram CRM Bot",
+      "group": "CRM",
+      "status": "Портфолио-демо",
+      "description": "Пошаговый приём заявки, SQLite-реестр, история статусов и Excel-экспорт.",
+      "contribution": "Идея, сценарий и разработка автоматизации.",
+      "image": "assets/catalogue/product-telegram-crm.jpg",
+      "url": "https://alextander28.github.io/telegram-crm-bot/",
+      "detail": "Демонстрационные обращения синтетические; реальный Telegram не заявляется как проверенный в этой подготовке.",
+      "imageWidth": 1200,
+      "imageHeight": 833
+    },
+    {
+      "id": "antislop",
+      "title": "Антислоп — библиотека дизайна",
+      "group": "Продукты и платформы",
+      "status": "Опубликованный веб-продукт",
+      "description": "Поиск, подборки, проекты и подготовка материалов для работы с AI-инструментами.",
+      "contribution": "Концепция, пользовательские сценарии, дизайн и автоматизации.",
+      "image": "assets/catalogue/product-antislop.jpg",
+      "detailImage": "assets/catalogue/product-builder.jpg",
+      "url": "https://antislop-design-library.vercel.app/",
+      "detail": "Сохранённые экраны показывают библиотеку и конструктор. Актуальная облачная синхронизация отдельно не проверялась.",
+      "imageWidth": 1200,
+      "imageHeight": 833
+    },
+    {
+      "id": "planner",
+      "title": "3D-планировщик квартир",
+      "group": "Продукты и платформы",
+      "status": "Локальный интерактивный прототип",
+      "description": "Редактируемый план, мебель, отделка и свет, 3D-просмотр, прогулка и сохранение вариантов.",
+      "contribution": "Идея, сценарии редактирования и дизайн интерфейса.",
+      "image": "assets/catalogue/product-planner.jpg",
+      "detailImage": "assets/catalogue/product-walk.jpg",
+      "detail": "Сохранённые экраны плана и 3D. Публичный запуск не подтверждён; это не строительная документация.",
+      "imageWidth": 1200,
+      "imageHeight": 674
+    },
+    {
+      "id": "intake",
+      "title": "Заявка в работе",
+      "group": "Продукты и платформы",
+      "status": "Опубликованный сайт и демо-сценарий",
+      "description": "Короткая форма, подробный бриф, логика сохранения обращений и уведомлений.",
+      "contribution": "Идея, сценарий, дизайн и разработка автоматизаций.",
+      "image": "assets/catalogue/product-intake.jpg",
+      "detailImage": "assets/catalogue/product-brief.jpg",
+      "url": "https://remont-omsk-intake.vercel.app/#demo",
+      "detail": "На странице демонстрационный путь обращения. Живая доставка в Telegram и внешние хранилища требует отдельной проверки.",
+      "imageWidth": 1200,
+      "imageHeight": 675
+    },
+    {
+      "id": "marketing-os",
+      "title": "AI Marketing OS",
+      "group": "Продукты и платформы",
+      "status": "R&D / локальный прототип",
+      "description": "Бизнес-профиль, исследование, предложение, бюджет и следующий маркетинговый цикл.",
+      "contribution": "Идея продукта, сценарии и дизайн рабочего процесса.",
+      "image": "assets/catalogue/product-marketing-os.jpg",
+      "detail": "AI и рыночный поиск используют тестовые данные. Реальные рекламные кампании и выручка не заявляются.",
+      "imageWidth": 1149,
+      "imageHeight": 837
+    },
+    {
+      "id": "ai-support",
+      "title": "AI Support Bot",
+      "group": "Python-инструменты",
+      "status": "Портфолио-демо",
+      "description": "Ответы по базе знаний, источники и передача вопроса человеку при недостаточной уверенности.",
+      "contribution": "Идея, сценарий и разработка автоматизации.",
+      "image": "assets/catalogue/product-ai-support.jpg",
+      "url": "https://alextander28.github.io/ai-support-bot/",
+      "detail": "Пример на синтетических данных; внешний AI-классификатор опционален.",
+      "imageWidth": 1200,
+      "imageHeight": 833
+    },
+    {
+      "id": "excel",
+      "title": "Excel Report Automation",
+      "group": "Python-инструменты",
+      "status": "Портфолио-демо",
+      "description": "Проверка CSV/XLSX, журнал проблем, Excel-отчёт и машинная сводка JSON.",
+      "contribution": "Идея, сценарий обработки данных и разработка автоматизации.",
+      "image": "assets/catalogue/product-excel.jpg",
+      "url": "https://alextander28.github.io/excel-report-automation/",
+      "detail": "Демонстрационные заказы синтетические; экономия времени у реального клиента не заявляется.",
+      "imageWidth": 313,
+      "imageHeight": 1000
+    },
+    {
+      "id": "demo-leads",
+      "title": "Очистка лидов",
+      "group": "Демонстрации автоматизаций",
+      "status": "Браузерная демонстрация",
+      "description": "Проверить контакты и найти дубли",
+      "contribution": "Идея и сценарий автоматизации.",
+      "url": "https://alextander28.github.io/ai-creator-portfolio/demos/automation/index.html#leads",
+      "detail": "Данные демонстрационные. Изменения только в текущей вкладке; реальные заявки, сообщения и платежи не отправляются."
+    },
+    {
+      "id": "demo-support",
+      "title": "Обращения",
+      "group": "Демонстрации автоматизаций",
+      "status": "Браузерная демонстрация",
+      "description": "Распределить сообщения по очередям",
+      "contribution": "Идея и сценарий автоматизации.",
+      "url": "https://alextander28.github.io/ai-creator-portfolio/demos/automation/index.html#support",
+      "detail": "Данные демонстрационные. Изменения только в текущей вкладке; реальные заявки, сообщения и платежи не отправляются."
+    },
+    {
+      "id": "demo-booking",
+      "title": "Запись",
+      "group": "Демонстрации автоматизаций",
+      "status": "Браузерная демонстрация",
+      "description": "Выбрать свободное время",
+      "contribution": "Идея и сценарий автоматизации.",
+      "url": "https://alextander28.github.io/ai-creator-portfolio/demos/automation/index.html#booking",
+      "detail": "Данные демонстрационные. Изменения только в текущей вкладке; реальные заявки, сообщения и платежи не отправляются."
+    },
+    {
+      "id": "demo-orders",
+      "title": "Заказы",
+      "group": "Демонстрации автоматизаций",
+      "status": "Браузерная демонстрация",
+      "description": "Проверить количество и остатки",
+      "contribution": "Идея и сценарий автоматизации.",
+      "url": "https://alextander28.github.io/ai-creator-portfolio/demos/automation/index.html#orders",
+      "detail": "Данные демонстрационные. Изменения только в текущей вкладке; реальные заявки, сообщения и платежи не отправляются."
+    },
+    {
+      "id": "demo-content",
+      "title": "Контент-план",
+      "group": "Демонстрации автоматизаций",
+      "status": "Браузерная демонстрация",
+      "description": "Составить расписание по шаблону",
+      "contribution": "Идея и сценарий автоматизации.",
+      "url": "https://alextander28.github.io/ai-creator-portfolio/demos/automation/index.html#content",
+      "detail": "Данные демонстрационные. Изменения только в текущей вкладке; реальные заявки, сообщения и платежи не отправляются."
+    },
+    {
+      "id": "demo-invoice",
+      "title": "Счёт",
+      "group": "Демонстрации автоматизаций",
+      "status": "Браузерная демонстрация",
+      "description": "Рассчитать позиции, скидку и налог",
+      "contribution": "Идея и сценарий автоматизации.",
+      "url": "https://alextander28.github.io/ai-creator-portfolio/demos/automation/index.html#invoice",
+      "detail": "Данные демонстрационные. Изменения только в текущей вкладке; реальные заявки, сообщения и платежи не отправляются."
+    },
+    {
+      "id": "demo-crm",
+      "title": "CRM",
+      "group": "Демонстрации автоматизаций",
+      "status": "Браузерная демонстрация",
+      "description": "Провести заявку по этапам",
+      "contribution": "Идея и сценарий автоматизации.",
+      "url": "https://alextander28.github.io/ai-creator-portfolio/demos/automation/index.html#crm",
+      "detail": "Данные демонстрационные. Изменения только в текущей вкладке; реальные заявки, сообщения и платежи не отправляются."
+    }
+  ],
+  "flagship": {
+    "title": "AI Creator — мой сайт-портфолио",
+    "description": "Сам сайт — отдельная работа: авторская визуальная подача, коллекции макетов и обложек, интерфейсные концепции и демонстрации.",
+    "image": "assets/catalogue/product-creator-site.jpg",
+    "url": "https://alextander28.github.io/ai-creator-portfolio/site/index.html",
+    "width": 1200,
+    "height": 675
+  }
+}
