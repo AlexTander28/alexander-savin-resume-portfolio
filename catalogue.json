@@ -3,7 +3,7 @@
     {
       "id": "mockups",
       "title": "Дизайны сайтов",
-      "description": "Полные авторские макеты: от первого экрана до структуры страницы.",
+      "description": "Полные авторские макеты: от первого экрана до нижних разделов. Наведите курсор или нажмите «Прокрутить сайт».",
       "items": [
         {
           "id": "mockups-mockup-bike",
@@ -12,7 +12,10 @@
           "thumb": "assets/catalogue/mockups-mockup-bike.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/bike.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/bike.png",
+          "scrollSrc": "assets/scroll-mockups/bike.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 5592
         },
         {
           "id": "mockups-mockup-apartments",
@@ -21,7 +24,10 @@
           "thumb": "assets/catalogue/mockups-mockup-apartments.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/apartments.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/apartments.png",
+          "scrollSrc": "assets/scroll-mockups/apartments.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 5917
         },
         {
           "id": "mockups-mockup-office",
@@ -30,7 +36,10 @@
           "thumb": "assets/catalogue/mockups-mockup-office.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/office.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/office.png",
+          "scrollSrc": "assets/scroll-mockups/office.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 6227
         },
         {
           "id": "mockups-mockup-doors",
@@ -39,7 +48,10 @@
           "thumb": "assets/catalogue/mockups-mockup-doors.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/doors.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/doors.png",
+          "scrollSrc": "assets/scroll-mockups/doors.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 5147
         },
         {
           "id": "mockups-mockup-finance",
@@ -48,7 +60,10 @@
           "thumb": "assets/catalogue/mockups-mockup-finance.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/finance.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/finance.png",
+          "scrollSrc": "assets/scroll-mockups/finance.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 10998
         },
         {
           "id": "mockups-mockup-beauty",
@@ -57,7 +72,10 @@
           "thumb": "assets/catalogue/mockups-mockup-beauty.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/beauty.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/beauty.png",
+          "scrollSrc": "assets/scroll-mockups/beauty.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 7476
         },
         {
           "id": "mockups-mockup-gas",
@@ -66,7 +84,10 @@
           "thumb": "assets/catalogue/mockups-mockup-gas.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/gas.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/gas.png",
+          "scrollSrc": "assets/scroll-mockups/gas.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 2918
         },
         {
           "id": "mockups-mockup-realty",
@@ -75,7 +96,10 @@
           "thumb": "assets/catalogue/mockups-mockup-realty.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/realty.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/realty.png",
+          "scrollSrc": "assets/scroll-mockups/realty.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 3314
         },
         {
           "id": "mockups-mockup-water",
@@ -84,7 +108,10 @@
           "thumb": "assets/catalogue/mockups-mockup-water.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/water.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/water.png",
+          "scrollSrc": "assets/scroll-mockups/water.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 4369
         },
         {
           "id": "mockups-mockup-fences",
@@ -93,7 +120,10 @@
           "thumb": "assets/catalogue/mockups-mockup-fences.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/fences.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/fences.png",
+          "scrollSrc": "assets/scroll-mockups/fences.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 4349
         },
         {
           "id": "mockups-mockup-cosmetics",
@@ -102,7 +132,10 @@
           "thumb": "assets/catalogue/mockups-mockup-cosmetics.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/cosmetics.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/cosmetics.png",
+          "scrollSrc": "assets/scroll-mockups/cosmetics.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 3526
         },
         {
           "id": "mockups-mockup-headphones",
@@ -111,7 +144,10 @@
           "thumb": "assets/catalogue/mockups-mockup-headphones.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/headphones.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/headphones.png",
+          "scrollSrc": "assets/scroll-mockups/headphones.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 2817
         },
         {
           "id": "mockups-mockup-audiobooks",
@@ -120,7 +156,10 @@
           "thumb": "assets/catalogue/mockups-mockup-audiobooks.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/audiobooks.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/audiobooks.png",
+          "scrollSrc": "assets/scroll-mockups/audiobooks.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 3429
         },
         {
           "id": "mockups-mockup-cargo",
@@ -129,7 +168,10 @@
           "thumb": "assets/catalogue/mockups-mockup-cargo.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/cargo.webp"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/cargo.webp",
+          "scrollSrc": "assets/scroll-mockups/cargo.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 3375
         },
         {
           "id": "mockups-mockup-gas-refill",
@@ -138,7 +180,10 @@
           "thumb": "assets/catalogue/mockups-mockup-gas-refill.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/gas-refill.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/gas-refill.png",
+          "scrollSrc": "assets/scroll-mockups/gas-refill.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 3782
         },
         {
           "id": "mockups-mockup-construction",
@@ -147,7 +192,10 @@
           "thumb": "assets/catalogue/mockups-mockup-construction.jpg",
           "width": 1000,
           "height": 750,
-          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/construction.png"
+          "url": "https://alextander28.github.io/ai-creator-portfolio/site/assets/figma/construction.png",
+          "scrollSrc": "assets/scroll-mockups/construction.webp",
+          "scrollWidth": 1000,
+          "scrollHeight": 3975
         }
       ]
     },
